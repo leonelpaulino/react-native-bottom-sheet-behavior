@@ -18,7 +18,7 @@ public class FloatingActionButtonShadowNode extends LayoutShadowNode implements 
     }
 
     @Override
-    public long measure(YogaNode node, float width, YogaMeasureMode widthMode, float height, YogaMeasureMode heightMode) {
+    public long measure(YogaNodeAPI node, float width, YogaMeasureMode widthMode, float height, YogaMeasureMode heightMode) {
         if(!mMeasured) {
             FloatingActionButtonView nodeView = new FloatingActionButtonView(getThemedContext());
             final int spec = View.MeasureSpec.makeMeasureSpec(
